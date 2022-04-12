@@ -10,21 +10,29 @@ export default function Layout({children, title = "baseball management system"})
             </Head>
 
             <header>
-                <nav className="bg-gray-800 w-screen">
-                    <div className="flex items-center pl-8 h-14">
+                {/* see: https://tailwindcomponents.com/component/simple-navbar */}
+                <nav
+                    className="font-sans flex flex-col text-center sm:flex-row sm:text-left sm:justify-between py-2 px-6 bg-white shadow sm:items-baseline w-full">
+                    {/*<div className="flex items-center pl-8 h-14">*/}
+                    <div className={"mb-2 sm:mb-0"}>
                         <div className="flex space-x-4">
+                            <span className="text-indigo-500 font-extrabold px-3 py-2 rounded">BMS</span>
                             <Link href="/">
-                                <a className="text-gray-300 hover:text-gray-700 px-3 py-2 rounded">Home</a>
+                                <a className="text-gray-500 hover:text-gray-700 px-3 py-2 rounded">Home</a>
                             </Link>
-                            {/*
-                            <Link href="/blog-page">
-                                <a className="text-gray-300  hover:text-gray-700 px-3 py-2 ">Blog</a>
+                            {/* TODO: Now working */}
+                            <span
+                                className="text-gray-500 hover:text-gray-700 px-3 py-2 rounded">Team (Now working)</span>
+                            <Link href="/about">
+                                <a className="text-gray-500 hover:text-gray-700 px-3 py-2 rounded">About</a>
                             </Link>
-                            <Link href="/contact-page">
-                                <a className="text-gray-300  hover:text-gray-700 px-3 py-2 ">Contact</a>
-                            </Link>
-                            */}
                         </div>
+                    </div>
+                    <div>
+                        <Link href={"/login"}>
+                            <a className="text-gray-500 hover:text-gray-700 px-3 py-2 rounded" href="/login">Log in |
+                                Register</a>
+                        </Link>
                     </div>
                 </nav>
             </header>
