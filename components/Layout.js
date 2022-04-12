@@ -1,0 +1,57 @@
+import Head from "next/head"
+import Link from "next/link"
+
+export default function Layout({children, title = "baseball management system"}) {
+    return (
+        <div className={""}>
+            <Head>
+                <title>{title}</title>
+                <link rel="icon" href="/favicon.ico"/>
+            </Head>
+
+            <header>
+                <nav className="bg-gray-800 w-screen">
+                    <div className="flex items-center pl-8 h-14">
+                        <div className="flex space-x-4">
+                            <Link href="/">
+                                <a className="text-gray-300 hover:text-gray-700 px-3 py-2 rounded">Home</a>
+                            </Link>
+                            {/*
+                            <Link href="/blog-page">
+                                <a className="text-gray-300  hover:text-gray-700 px-3 py-2 ">Blog</a>
+                            </Link>
+                            <Link href="/contact-page">
+                                <a className="text-gray-300  hover:text-gray-700 px-3 py-2 ">Contact</a>
+                            </Link>
+                            */}
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+            {children}
+
+            <footer id="footer" className={"w-full h-12 flex justify-center items-center border-t"}>
+                <span className={"text-indigo-700 hover:text-indigo-700 px-5 py-2 rounded"}>
+                    &copy; 2022 BMS - Baseball Management System
+                </span>
+                <Link href="/">
+                    <a
+                        className={"text-indigo-300 hover:text-indigo-700 px-5 py-2 rounded"}
+                        href="mailto:bms-dev@googlegroups.com"
+                    >
+                        お問い合わせ
+                    </a>
+                </Link>
+                <Link href="/">
+                    <a
+                        className={"text-indigo-300 hover:text-indigo-700 px-5 py-2 rounded"}
+                        href="https://twitter.com/BmsStatus"
+                    >
+                        Twitter
+                    </a>
+                </Link>
+            </footer>
+        </div>
+    )
+}

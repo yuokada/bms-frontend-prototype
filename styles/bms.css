@@ -1,0 +1,206 @@
+html,
+body {
+    height: 100%;
+    /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    /* Negative indent footer by it's height */
+    margin: 0 auto -60px;
+}
+
+nav div.alert {
+    margin-bottom: 0px;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* ヘッダーの環境お知らせの背景 */
+nav div[data-env] {
+    padding: 5px;
+    color: white;
+}
+
+nav div[data-env="development"] {
+    background-color: red;
+}
+
+nav div[data-env="test"] {
+    background-color: green;
+}
+
+nav div[data-env="staging"] {
+    background-color: blue;
+}
+
+/* Set the fixed height of the footer here */
+#push {
+    height: 60px;
+    text-align: center;
+}
+
+#footer {
+    height: 60px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
+
+img#user-icon {
+    margin: -10px;
+}
+
+
+th.team {
+    width: 100px;
+}
+
+th.sum {
+    width: 50px;
+}
+
+th.change {
+    width: 50px;
+}
+
+th.order {
+    width: 50px;
+}
+
+th.name {
+    width: 150px;
+}
+
+th.number {
+    width: 50px;
+}
+
+th.position {
+    width: 100px;
+}
+
+td.button {
+    text-align: right;
+}
+
+td.daseki-number-text {
+    text-align: center;
+}
+
+tr.detail {
+    background-color: #F5F5F5;
+}
+
+div.stats-container table th, td {
+    text-align: center;
+}
+
+div.stats-post {
+    text-align: center;
+}
+
+div.batter-stats-post button {
+    margin: 10px;
+}
+
+/*
+ * 投手成績入力画面
+ */
+
+/* 中央揃え */
+table#pitcher th,
+table#pitcher td {
+    text-align: center;
+}
+
+/* セルの幅指定 */
+table#pitcher th.order,
+table#pitcher th.IP,
+table#pitcher th.result,
+table#pitcher th.H,
+table#pitcher th.SO,
+table#pitcher th.BB,
+table#pitcher th.HB,
+table#pitcher th.ER,
+table#pitcher th.R {
+    width: 80px;
+}
+
+/* Input幅指定 */
+table#pitcher input {
+    width: 60px;
+}
+
+table#game-list tbody tr {
+    cursor: pointer;
+}
+
+table#game-list tr.own {
+    background-color: #FFFFCC;
+}
+
+table .width-20 {
+    width: 10%
+}
+
+table .width-40 {
+    width: 40%
+}
+
+table[role=score] th {
+    text-align: center;
+}
+
+table[role=score] select {
+    background-color: white;
+    border: 0px;
+}
+
+table#score input {
+    width: 40px;
+}
+
+table#batter td.RBI,
+table#batter td.R,
+table#batter td.SB,
+table#batter td.E {
+    width: 70px;
+}
+
+table#batter td.RBI input,
+table#batter td.R input,
+table#batter td.SB input,
+table#batter td.E input {
+    width: 40px;
+}
+
+.disable {
+    display: none;
+}
+
+.red {
+    color: red;
+}
+
+.min-width-100 {
+    min-width: 100px;
+}
+
+img.usericon {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+table.player-list th {
+    text-align: center;
+}
+
+table.player-list img {
+    width: 50px;
+    height: 50px;
+}
