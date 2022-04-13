@@ -6,7 +6,7 @@ export default function Layout({children, title = "baseball management system"})
         <div className={""}>
             <Head>
                 <title>{title}</title>
-                <link rel="icon" href="/favicon.ico"/>
+                <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
             </Head>
 
             <header>
