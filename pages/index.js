@@ -5,8 +5,9 @@ import Team from "../components/Team";
 export default function Home({teams}) {
     return (
         <Layout title={"BMS - Baseball Management System"}>
-            <div className={""}>Welcome to BMS!</div>
-            <ui className="m-10">
+            <div className={"text-xl"}>Welcome to BMS!</div>
+            <div>Select your team!</div>
+            <ui className="m-18 list-none hover:list-disc">
                 {teams && teams.map((team) => <Team key={team.id} team={team}/>)
                 }
             </ui>

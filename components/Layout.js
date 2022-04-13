@@ -12,7 +12,7 @@ export default function Layout({children, title = "baseball management system"})
             <header>
                 {/* see: https://tailwindcomponents.com/component/simple-navbar */}
                 <nav
-                    className="font-sans flex flex-col text-center sm:flex-row sm:text-left sm:justify-between py-2 px-6 bg-white shadow sm:items-baseline w-full">
+                    className="font-sans flex flex-col text-center sm:flex-row sm:text-left sm:justify-between py-2 px-6 bg-indigo-100 shadow sm:items-baseline w-full">
                     {/*<div className="flex items-center pl-8 h-14">*/}
                     <div className={"mb-2 sm:mb-0"}>
                         <div className="flex space-x-4">
