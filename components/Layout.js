@@ -31,8 +31,7 @@ export default function Layout({children, title = "baseball management system"})
                     <div>
                         <Link href={"/login"}>
                             {/* NOTE: It may be better to split into 2 buttons. */}
-                            <a className="text-gray-500 hover:text-gray-700 px-3 py-2 rounded" href="/login">Log in |
-                                Register</a>
+                            <a className="text-gray-500 hover:text-gray-700 px-3 py-2 rounded">Log in | Register</a>
                         </Link>
                     </div>
                 </nav>
