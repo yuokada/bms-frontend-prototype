@@ -36,9 +36,9 @@ export default function Layout({children, title = "baseball management system"})
                     </div>
                 </nav>
             </header>
-
-            {children}
-
+            <main className="flex flex-1 justify-center items-center w-screen flex-col pt-6">
+                {children}
+            </main>
             <footer id="footer" className={"w-full h-12 flex justify-center items-center border-t"}>
                 <span className={"text-indigo-700 hover:text-indigo-700 px-5 py-2 rounded"}>
                     &copy; 2022 BMS - Baseball Management System
