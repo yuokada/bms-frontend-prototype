@@ -46,9 +46,11 @@ export default function Layout({children, title = "baseball management system"})
                 <Link href="mailto:bms-dev@googlegroups.com">
                     <a className={"text-indigo-300 hover:text-indigo-700 px-5 py-2 rounded"}>お問い合わせ</a>
                 </Link>
+                {/*
                 <Link href="https://twitter.com/BmsStatus">
                     <a className={"text-indigo-300 hover:text-indigo-700 px-5 py-2 rounded"}>Twitter</a>
                 </Link>
+                */}
             </footer>
         </div>
     )
