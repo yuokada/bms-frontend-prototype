@@ -14,3 +14,7 @@ updates:
         patterns:
           - "tailwindcss"
           - "@tailwindcss/*"
+      eslint-dependencies:
+        patterns:
+          - "eslint"
+          - "eslint-*"
