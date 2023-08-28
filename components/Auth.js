@@ -1,7 +1,7 @@
 import {useState} from "react";
 import {useRouter} from "next/router";
 import Cookie from "universal-cookie";
-import {LockClosedIcon} from '@heroicons/react/solid'
+import {LockClosedIcon} from '@heroicons/react/20/solid'
 
 const cookie = new Cookie();
 export default function Auth() {
