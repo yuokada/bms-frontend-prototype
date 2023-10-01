@@ -9,6 +9,9 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "monthly"
+      day: "monday"
+      time: "07:00"
+      timezone: "Asia/Tokyo"
     groups:
       tailwind-dependencies:
         patterns:
