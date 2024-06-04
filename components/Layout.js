@@ -17,21 +17,25 @@ export default function Layout({children, title = "baseball management system"})
                     <div className={"mb-2 sm:mb-0"}>
                         <div className="flex space-x-4">
                             <span className="text-indigo-500 font-extrabold px-3 py-2 rounded">BMS</span>
-                            <Link href="/">
-                                <a className="text-gray-500 hover:text-gray-700 px-3 py-2 rounded">Home</a>
+                            <Link href="/" className="text-gray-500 hover:text-gray-700 px-3 py-2 rounded">
+                                Home
                             </Link>
                             {/* TODO: Now working */}
                             <span
                                 className="text-gray-500 hover:text-gray-700 px-3 py-2 rounded">Team (Now working)</span>
-                            <Link href="/about">
-                                <a className="text-gray-500 hover:text-gray-700 px-3 py-2 rounded">About</a>
+                            <Link
+                                href="/about"
+                                className="text-gray-500 hover:text-gray-700 px-3 py-2 rounded">
+                                About
                             </Link>
                         </div>
                     </div>
                     <div>
-                        <Link href={"/login"}>
+                        <Link
+                            href={"/login"}
+                            className="text-gray-500 hover:text-gray-700 px-3 py-2 rounded">
                             {/* NOTE: It may be better to split into 2 buttons. */}
-                            <a className="text-gray-500 hover:text-gray-700 px-3 py-2 rounded">Log in | Register</a>
+                            Log in | Register
                         </Link>
                     </div>
                 </nav>
@@ -43,8 +47,10 @@ export default function Layout({children, title = "baseball management system"})
                 <span className={"text-indigo-700 hover:text-indigo-700 px-5 py-2 rounded"}>
                     &copy; 2022 BMS - Baseball Management System
                 </span>
-                <Link href="mailto:bms-dev@googlegroups.com">
-                    <a className={"text-indigo-300 hover:text-indigo-700 px-5 py-2 rounded"}>お問い合わせ</a>
+                <Link
+                    href="mailto:bms-dev@googlegroups.com"
+                    className={"text-indigo-300 hover:text-indigo-700 px-5 py-2 rounded"}>
+                    お問い合わせ
                 </Link>
                 {/*
                 <Link href="https://twitter.com/BmsStatus">
@@ -53,5 +59,5 @@ export default function Layout({children, title = "baseball management system"})
                 */}
             </footer>
         </div>
-    )
+    );
 }
