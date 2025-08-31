@@ -1,5 +1,6 @@
+"use client";
 import {useState} from "react";
-import {useRouter} from "next/router";
+import {useRouter} from "next/navigation";
 import Cookie from "universal-cookie";
 import {LockClosedIcon} from '@heroicons/react/20/solid'
 
