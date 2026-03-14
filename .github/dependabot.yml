@@ -19,7 +19,6 @@ updates:
         patterns:
           - "tailwindcss"
           - "@tailwindcss/*"
-      eslint-dependencies:
+      biome-dependencies:
         patterns:
-          - "eslint"
-          - "eslint-*"
+          - "@biomejs/*"
