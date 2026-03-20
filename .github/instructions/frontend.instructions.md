@@ -1,5 +1,5 @@
 ---
-applyTo: "app/**/*.js,components/**/*.js,lib/**/*.js,package.json,next.config.js,biome.json"
+applyTo: "app/**/*.{js,jsx},components/**/*.{js,jsx},lib/**/*.js,styles/**/*.css,package.json,next.config.js,biome.json"
 ---
 
 When editing frontend or build files in this repository:
